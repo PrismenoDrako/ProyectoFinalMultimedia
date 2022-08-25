@@ -12,149 +12,119 @@
 <body>
   <div class="container">
 
-    <div class="nav-bar-container">
-      <img src="img/logo.png" class="logo" alt="Logo">
-      <ul class="nav-bar">
-        <li><a href="http://127.0.0.1:5500/index.html#">PRESENTACIÓN</a></li>
-        <li><a href="http://127.0.0.1:5500/sesions.html#">SESIONES</a></li>
-        <li><a href="#">NOSOTROS</a></li>
-      </ul>
-    </div>
-
-    <div class="presentation-container">
-      <h1>CURSO DE PROGRAMACIÓN MUTIMEDIA </h1>
-      <br>
-      <h2>SUMILLA</h2>
-      <P>Este es un curso teórico-práctico con un mayor énfasis en la práctica.
-        Este curso pretende formar al estudiante de ingeniería informática en el conocimiento y
-        manejo de la programación multimedia que le permita desarrollar aplicaciones Web y otras
-        que incorporen vídeos, sonidos, animación, gráficos y texto.
-        Los temas que se pretenden abordar permitirán al futuro profesional:
-      <ul>
-        <li>Conocer los conceptos básicos y estructura de un lenguaje de programación
-          multimedia</li>
-        <li>Programar correctamente aplicaciones Web utilizando una herramienta de desarrollo
-          de fácil uso.</li>
-      </ul>
-      </P>
-      <br>
-      <h2>OBJETIVOS GENERALES</h2>
-      <br>
-      <ul>
-        <li>Proporcionar los conocimientos de un lenguaje de programación multimedia para
-          desarrollar diversos componentes de un sistema informático multimedia, incluyendo
-          animaciones, sonidos, vídeos, textos y gráficos.</li>
-        <li>Presentar los componentes de un ambiente Web.</li>
-        <li>Desarrollar las habilidades del alumno que le permitan cubrir las necesidades para
-          desarrollar un sistema con una herramienta multimedia.</li>
-      </ul>
-      </P>
-      <br>
-      <h2>SESIONES</h2>
-      <br>
-      <div class="">
-        <ul>
-          <li><a>Sesion 1</a>
-            <ul>
-              <li>Conceptos básicos de Dreamweaver</li>
-              <li><a>Entorno de trabajo</a></li>
-              <li><a>El texto</a></li>
-              <li><a>Imágenes, hiperenlaces.</a></li>
-            </ul>
-          </li>
-          <li><a>Sesion 2</a>
-            <ul>
-              <li><a>Creación de Tablas y Marcos</a></li>
-              <li><a>Formularios</a></li>
-            </ul>
-          </li>
-          <li><a>Sesion 3</a>
-            <ul>
-              <li><a>Plantillas</a></li>
-            </ul>
-          </li>
-          <li><a>Sesion 4</a>
-            <ul>
-              <li><a>Elementos multimedia en una página Web.</a></li>
-              <li><a>Uso de Capas</a></li>
-              <li><a>Comportamientos</a></li>
-            </ul>
-          </li>
-          <li><a >Sesion 5</a>
-            <ul>
-              <li><a>Estilos CSS avanzados</a></li>
-              <li><a>Sitios remotos</a></li>
-            </ul>
-          </li>
-          <li><a>Sesion 6</a>
-            <ul>
-              <li><a>Servidor de pruebas</a></li>
-              <li><a>Creación de Base de Datos</a></li>
-            </ul>
-          </li>
-          <li><a>Sesion 7</a>
-            <ul>
-              <li><a>Páginas Dinámicas</a></li>
-              <li><a>Crear un Blog</a></li>
-            </ul>
-          </li>
-          <li><a>Sesion 8</a>
-            <ul>
-              <li><a>El entorno de trabajo de Flash</a></li>
-              <li><a>Barras, Escenarios, Películas</a></li>
-            </ul>
-          </li>
-          <li><a >Sesion 9</a>
-            <ul>
-              <li><a >Creación de objetos</a></li>
-              <li><a >Creación de textos</a></li>
-            </ul>
-          </li>
-          <li><a >Sesion 10</a>
-            <ul>
-              <li><a>Símbolos e Instancias</a></li>
-              <li><a>Uso de capas</a></li>
-            </ul>
-          </li>
-          <li><a>Sesion 11</a>
-            <ul>
-              <li><a>Creación de Animaciones</a></li>
-              <li><a>Creación e inserción de botones</a></li>
-            </ul>
-          </li>
-          <li><a>Sesion 12</a>
-            <ul>
-              <li><a></a></li>
-            </ul>
-          </li>
-          <li><a>Sesion 13</a>
-            <ul>
-              <li><a>Adición de sonidos</a></li>
-              <li><a>Comportamientos</a></li>
-            </ul>
-          </li>
-          <li><a>Sesion 14</a>
-            <ul>
-              <li><a>El Lenguaje ActionScript</a></li>
-            </ul>
-          </li>
-          <li><a>Sesion 15</a>
-            <ul>
-              <li><a></a></li>
-            </ul>
-          </li>
+    <div class="nav-bar-container-super">
+      <img src="img/menu.png" alt="" id="btn-sidebar">
+      <div class="nav-bar-container">
+        <ul class="nav-bar">
+          <li><a target="article" href="presentation.html" id="presentation">PRESENTACIÓN</a></li>
+          <li><a target="article" href="sesion1/intro_1.html" id="sesions">SESIONES</a></li>
+          <li><a href="#">NOSOTROS</a></li>
         </ul>
-  
+        <img src="img/logo.png" class="logo" alt="Logo">
       </div>
-      <br>
-      <a target="article"href="http://127.0.0.1:5500/sesions.html#" class="btn">Ver Sesiones</a>
+      
     </div>
-  
+    <div class="sidebar" id="sidebar">
+      <ul>
+        <li><a href="sesion1/intro_1.html" target="article">Sesion 1</a>
+          <ul>
+            <li><a target="article"href="sesion1/conceptos.html">Conceptos básicos de Dreamweaver</a></li>
+            <li><a target="article"href="sesion1/entorno_trabajo.html">Entorno de trabajo</a></li>
+            <li><a target="article"href="sesion1/texto.html">El texto</a></li>
+            <li><a target="article"href="sesion1/imagenes_hiperenlaces.html">Imágenes, hiperenlaces.</a></li>
+          </ul>
+        </li>
+        <li><a href="sesion2/intro_2.html" target="article">Sesion 2</a>
+          <ul>
+            <li><a target="article" href="sesion2/creacion_tablas.html" target="article">Creación de Tablas y Marcos</a></li>
+            <li><a target="article" href="sesion2/formularios.html">Formularios</a></li>
+          </ul>
+        </li>
+        <li><a href="" target="article">Sesion 3</a>
+          <ul>
+            <li><a target="article" href="sesion3/plantillas.html" target="article">Plantillas</a></li>
+          </ul>
+        </li>
+        <li><a href="sesion4/inicio.html" target="article">Sesion 4</a>
+          <ul>
+            <li><a target="article" href="sesion4/elementos_multimedia.html">Elementos multimedia en una página Web.</a></li>
+            <li><a target="article" href="sesion4/uso_capas.html">Uso de Capas</a></li>
+            <li><a target="article" href="sesion4/comportamient">Comportamientos</a></li>
+          </ul>
+        </li>
+        <li><a href="tema5.html" target="article">Sesion 5</a>
+          <ul>
+            <li><a target="article" href="sesion5/estilos_avanzados.html">Estilos CSS avanzados</a></li>
+            <li><a target="article" href="sesion5/sitios_remotos.html">Sitios remotos</a></li>
+          </ul>
+        </li>
+        <li><a href="tema6.html" target="article">Sesion 6</a>
+          <ul>
+            <li><a target="article" href="sesion6/servidor_pruebas.html">Servidor de pruebas</a></li>
+            <li><a target="article" href="sesion6/creacion_base_datos.html">Creación de Base de Datos</a></li>
+          </ul>
+        </li>
+        <li><a href="tema7.html" target="article">Sesion 7</a>
+          <ul>
+            <li><a target="article" href="sesion7/paginas_dinamicas.html">Páginas Dinámicas</a></li>
+            <li><a target="article" href="sesion7/crear_blog.html">Crear un Blog</a></li>
+          </ul>
+        </li>
+        <li><a target="article" href="tema8.html" target="article">Sesion 8</a>
+          <ul>
+            <li><a target="article" href="sesion8/barras_escenarios_peliculas.html">El entorno de trabajo de Flash</a></li>
+            <li><a target="article" href="sesion8/entorno_de_trabajo_flash.html">Barras, Escenarios, Películas</a></li>
+          </ul>
+        </li>
+        <li><a target="article" href="tema9.html" target="article">Sesion 9</a>
+          <ul>
+            <li><a target="article" href="sesion9/creacion_de_objetos.html">Creación de objetos</a></li>
+            <li><a target="article" href="sesion9/creacion_de_textos.html">Creación de textos</a></li>
+          </ul>
+        </li>
+        <li><a href="tema10.html" target="article">Sesion 10</a>
+          <ul>
+            <li><a href="article"href="sesion10/simbolos_e_instancias">Símbolos e Instancias</a></li>
+            <li><a href="article"href="sesion10/uso_de_capas">Uso de capas</a></li>
+          </ul>
+        </li>
+        <li><a href="tema11.html" target="article">Sesion 11</a>
+          <ul>
+            <li><a href="article"href="sesion11/creacion_ de_animaciones">Creación de Animaciones</a></li>
+            <li><a href="article"href="">Creación e inserción de botones</a></li>
+          </ul>
+        </li>
+        <li><a href="tema12.html" target="article">Sesion 12</a>
+          <ul>
+            <li><a href="article"href=""></a></li>
+          </ul>
+        </li>
+        <li><a href="tema13.html" target="article">Sesion 13</a>
+          <ul>
+            <li><a href="article"href="">Adición de sonidos</a></li>
+            <li><a href="article"href="">Comportamientos</a></li>
+          </ul>
+        </li>
+        <li><a href="tema14.html" target="article">Sesion 14</a>
+          <ul>
+            <li><a href="article"href="">El Lenguaje ActionScript</a></li>
+          </ul>
+        </li>
+        <li><a href="tema15.html" target="article">Sesion 15</a>
+          <ul>
+            <li><a target="article"href=""></a></li>
+          </ul>
+        </li>
+      </ul>
+
+    </div>
+    <iframe src="presentation.html" name="article" class="article" id="frame">
+
+    </iframe>
     <div class="footer">
       <div class="div1">
         <img src="img/logofooter.png" class="logo_footer" alt="Logo">
-        <P>Esta página web fue hecha como poryecto final del curso de porogramación multimedia y contiene una
-          esquematización
+        <P>Esta página web fue hecha como poryecto final del curso de porogramación multimedia y contiene una esquematización
           de los contenidos de dicho curso.
         </P>
       </div>
@@ -170,6 +140,7 @@
     </div>
   </div>
 
+  <script src="cambio_vista.js"></script>
 </body>
 
 </html>
