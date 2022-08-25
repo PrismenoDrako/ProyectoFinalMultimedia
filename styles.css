@@ -28,6 +28,7 @@ body {
   overflow: auto;
   padding: 30PX;
   display: none;
+  transition: all 5s;
 }
 
 .sidebar a,
@@ -224,7 +225,7 @@ li ul {
   flex-direction: column;
   padding: 50px;
 }
-<<<<<<< HEAD
+
 .example{
   width: 95%;
   
@@ -232,10 +233,21 @@ li ul {
 .container-theme{
   display: flex;
   flex-direction: column;
-  align-items: center;
-=======
+  align-items: flex-start;
+  padding: 50px;
+  row-gap: 20px;
+}
 
 .presentation-container .btn{
   margin-top: 20px;
->>>>>>> 808627a5cfc2c5bfb8cb84b1eccbed31ecac304d
+
 }
+
+.container-theme p{
+  text-align: justify;
+}
+
+.container-theme img{
+  align-self: center;
+}
+

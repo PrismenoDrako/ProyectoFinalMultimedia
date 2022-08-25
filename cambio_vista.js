@@ -12,6 +12,7 @@ function watch_sesions(){
     
         sidebar.style.display = 'block';
         frame.style.gridArea='2 / 3 / 3 / 4';
+
     
 }
 function presentation(){
