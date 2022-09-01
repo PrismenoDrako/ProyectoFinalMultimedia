@@ -272,3 +272,22 @@ li ul {
 .btn-p-n:hover{
   background-color: #01a9c1;
 }
+
+.card{
+  display: flex;
+  width: 100%;
+  background-color: #e5f3fe;
+  border-radius: 10px;
+  border-left: #0286f2 solid 8px;
+  align-self: center;
+}
+
+.card img{
+  width: 20px;
+  height: 20px;
+  margin-left: 30px;
+}
+
+.card p{
+  padding: 30px;
+}
