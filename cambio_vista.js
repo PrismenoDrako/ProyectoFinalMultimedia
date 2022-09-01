@@ -11,14 +11,14 @@ sidebar.style.display = 'none';
 function watch_sesions(){
     
         sidebar.style.display = 'block';
-        frame.style.gridArea='2 / 3 / 3 / 4';
+        frame.style.gridArea='2 / 2 / 3 / 3';
 
     
 }
 function presentation(){
     if(sidebar.style.display == 'block'){
         sidebar.style.display = 'none';
-        frame.style.gridArea='2 / 2 / 3 / 4';
+        frame.style.gridArea='2 / 1 / 3 / 3';
     }
 }
 
