@@ -8,5 +8,77 @@
 </head>
 <body>
   <h1>intro 7</h1>
+  <h1>Imágenes - Hiperenlaces</h1>
+  
+  <h2>Imágenes</h2>
+
+  <p>Si solo insertamos texto en nuestras páginas webs, estas quedarán muy sencillas y poco lucidas. Es por ello que en tenemos la capacidad de insertar imágenes. Las imágenes podrán ser elementos representativos de página web o elementos decorativos. Si bien, en el caso de ser elementos decorativos deberíamos de utilizar para insertarlos en nuestra página web.
+    El uso de imágenes dentro de una página web tiene que hacerse con cautela, ya que cada imagen que pongamos en nuestra web incrementará el tamaño (peso) de la página. Por lo cual se verá afectado el tiempo de descarga de la página.</p>
+ <p>Para insertar una imagen dentro de una página debemos utilizar el elemento HTML , la misma no tiene una marca de finalización (similar a la marca ).
+  Generalmente, la imagen se encuentra en el mismo servidor donde se almacenan nuestras páginas HTML. Los formatos clásicos son los archivos con extensiones gif, jpg y png.
+  
+  La sintaxis de esta marca es:</p>
+  <div class="card">
+    
+    <p> < img src="foto1.jpg" alt="Paisaje" >
+    </p>
+  </div>
+  <p>Como mínimo, debemos inicializar las propiedades src y alt de la marca HTML img.
+
+    En la propiedad src indicamos el nombre del archivo que contiene la imagen (en un servidor Linux es sensible a mayúsculas y minúsculas por lo que recomiendo que siempre utilicen minúsculas para los nombres de archivos).
+    
+    Como la imagen se encuentra en el mismo directorio donde se almacena la página HTML, con indicar el nombre de archivo basta (no es necesario indicar ninguna ruta de carpetas).
+    
+    Otra propiedad obligatoria es alt, donde disponemos un texto que verán los usuarios que visiten el sitio con un navegador que sólo permite texto (o con un navegador que tenga desactivada la opción de descarga de imágenes). El texto debe describir el contenido de la imagen.
+    
+    Confeccionemos una página que muestre una imagen llamada foto1.jpg (La imagen se encuentra almacenada en el servidor en la misma carpeta donde se localiza esta página)</p>
+    
+    
+      <p> < html></p>
+      <p> < head></p>
+      <p>  </ head></p>
+      <p>  < body></p>
+      <p>  < img src="foto1.jpg" alt="Paisaje"></p>
+      <p>  </ body></p>
+      <p>  </ html></p>
+      <p>Si la imagen se encuentra en una subcarpeta llamada imagenes, luego la sintaxis para recuperarla será:</p>
+      <div class="card">
+    
+        <p> < img src="foto1.jpg" alt="Paisaje">
+        </p>
+      </div>
+      <p>Es decir, antecedemos al nombre de la imagen el nombre de la carpeta y la barra /
+
+        Si la imagen se encuentra en una carpeta padre de donde se encuentra la página HTML luego la sintaxis será:</p>
+        <div class="card">
+    
+          <p> < img src="foto1.jpg" alt="Paisaje">
+          </p>
+        </div>
+        <p>Es decir, le antecedemos .. y la barra / al nombre de la imagen
+
+          Si queremos subir dos carpetas luego escribimos:</p>
+          <div class="card">
+    
+            <p> < src="../../foto1.jpg" alt="Paisaje">
+            </p>
+          </div>
+          <p>Por último, si queremos acceder a una imagen que se encuentra en una carpeta llamada imagenes pero que está al mismo nivel:</p>
+          <div class="card">
+            <p> < img src="../imagenes/foto1.jpg" alt="Paisaje">
+            
+            </p>
+          </div>
+          <p>Primero le indicamos que subimos al directorio padre mediante los dos puntos .. y seguidamente indicamos el nombre de la carpeta y la imagen a mostrar.</p>
+          <p>" viene de image"</p>
+          <p>"src viene de source"</p>
+          <p>"alt viene de alternative y puede ser la descripcion de la imagen"</p>
+
+          <h2>Hiperenlaces</h2>
+
+    <div class="prev-next">
+      <a href="texto.html" class="btn btn-p-n" target="article">Anterior</a>
+      <a href="../sesion2/intro_2.html" class="btn btn-p-n" target="article">Siguiente</a>      
+    </div>
 </body>
 </html>
