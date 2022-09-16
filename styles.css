@@ -291,3 +291,11 @@ li ul {
 .card p{
   padding: 30px;
 }
+
+/*SIDEBAR DESPLEGABLE*/
+
+.menu_interno{
+  height: 0px;
+  overflow: hidden;
+}
+

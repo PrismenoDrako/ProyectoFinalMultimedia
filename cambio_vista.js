@@ -39,3 +39,27 @@ btn_sidebar.addEventListener('click',() => {
         watch_sesions();
     }
 })
+
+let menu_interno = document.getElementsByClassName('menu_interno');
+let menu = document.getElementsByClassName('menu');
+
+function ocultar_submenus(){
+    for(let i = 0; i < menu_interno.length; i++) {
+        menu_interno[i].style.height = 0;
+    }
+}
+
+for(let i = 0; i < menu.length; i++) {
+    menu[i].addEventListener('click',() => {
+        let h = 0;
+        let i_menu = menu[i].nextElementSibling;
+        console.log(menu[i].nextElementSibling.style.height)
+        if(menu[i].nextElementSibling.clientHeight == "0"){
+            h = i_menu.scrollHeight;
+        }
+        ocultar_submenus();
+        menu[i].nextElementSibling.style.height = h+'px';
+        
+
+    })
+}
