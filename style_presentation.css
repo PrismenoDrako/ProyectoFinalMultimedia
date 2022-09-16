@@ -65,14 +65,13 @@ ul{
 
 .sesiones ul{
   display: flex;
-  flex-direction: column;
   gap: 10px;
   list-style: none;
+  flex-wrap: wrap;
 }
 .sesiones ul li{
-
-
   display: flex;
+  width: 30%;
 }
 .sesiones ul li a{
   height: 100%;
