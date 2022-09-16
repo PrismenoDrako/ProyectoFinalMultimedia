@@ -8,5 +8,179 @@
 </head>
 <body>
   <h1>Formularios</h1>
+  <p>En esta lección se comentan las etiquetas relacionadas con los formularios</p>
+  
+  <section id="formulario-form">
+    <h2 class="con-aside">El formulario: <span class="html-eti">&lt;form&gt;</span></h2>  
+    <p>Un formulario es un conjunto de controles (botones, cajas de texto, casillas de verificación, botones radio, etc) que permiten al usuario introducir datos y enviarlos al servidor web para su procesamiento.</p>
+
+    <div class="filaflex">
+      <div class="codigo">
+        <pre class=" language-html" tabindex="0"><code class=" language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>form</span><span class="token space"> </span><span class="token attr-name">action</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>ejemplo.php<span class="token punctuation">"</span></span><span class="token space"> </span><span class="token attr-name">method</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>get<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token lf">
+</span><span class="token space"> </span><span class="token space"> </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>Nombre:<span class="token space"> </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span><span class="token space"> </span><span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text<span class="token punctuation">"</span></span><span class="token space"> </span><span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>nombre<span class="token punctuation">"</span></span><span class="token space"> </span><span class="token attr-name">size</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>40<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span><span class="token lf">
+</span><span class="token space"> </span><span class="token space"> </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>Año<span class="token space"> </span>de<span class="token space"> </span>nacimiento:<span class="token space"> </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span><span class="token space"> </span><span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>number<span class="token punctuation">"</span></span><span class="token space"> </span><span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>nacido<span class="token punctuation">"</span></span><span class="token space"> </span><span class="token attr-name">min</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>1900<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span><span class="token lf">
+</span><span class="token space"> </span><span class="token space"> </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>Sexo:<span class="token lf">
+</span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span><span class="token space"> </span><span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>radio<span class="token punctuation">"</span></span><span class="token space"> </span><span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>hm<span class="token punctuation">"</span></span><span class="token space"> </span><span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>h<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token space"> </span>Hombre<span class="token lf">
+</span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span><span class="token space"> </span><span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>radio<span class="token punctuation">"</span></span><span class="token space"> </span><span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>hm<span class="token punctuation">"</span></span><span class="token space"> </span><span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>m<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token space"> </span>Mujer<span class="token lf">
+</span><span class="token space"> </span><span class="token space"> </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span><span class="token lf">
+</span><span class="token space"> </span><span class="token space"> </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span><span class="token lf">
+</span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span><span class="token space"> </span><span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>submit<span class="token punctuation">"</span></span><span class="token space"> </span><span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>Enviar<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token lf">
+</span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span><span class="token space"> </span><span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>reset<span class="token punctuation">"</span></span><span class="token space"> </span><span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>Borrar<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token lf">
+</span><span class="token space"> </span><span class="token space"> </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span><span class="token lf">
+</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>form</span><span class="token punctuation">&gt;</span></span></code>
+</pre>  
+    <p>La etiqueta que delimita un formulario es la etiqueta <span class="html-eti">&lt;form&gt; ...&lt;/form&gt;</span>. Los atributos más importantes de la etiqueta <span class="html-eti">&lt;form&gt;</span> son:</p>
+
+    <ul>
+      <li><span class="html-atri">action</span>: contiene el nombre del agente que procesará los datos remitidos al servidor (por ejemplo, un script de PHP)</li>
+      <li><span class="html-atri">method</span>: define la manera de enviar los datos al servidor. Los valores posibles son:
+        <ul>
+          <li><span class="html-atri-valor">get</span>: los valores enviados se añaden a la dirección indicada en el atributo <span class="html-atri">action</span></li>
+          <li><span class="html-atri-valor">post</span>: los valores se envían de forma separada</li>
+        </ul>
+        <p>Si el atributo <span class="html-atri">method</span> no está establecido, el formulario se comporta como si el valor fuera <span class="html-atri-valor">get</span>.</p>
+      </li>
+    </ul>
+
+    <p>La etiqueta <span class="html-eti">&lt;form&gt;</span> es un elemento de bloque. En su interior puede haber cualquier elemento típico de una página web (párrafos, imágenes, divisiones, listas, tablas, etc.), además de las etiquetas que crean los controles.</p>
+
+    <p>Los etiquetas que crean los controles en los formularios son <span class="html-eti">&lt;input&gt;</span>, <span class="html-eti">&lt;button&gt;</span>, <span class="html-eti">&lt;select&gt;</span>, <span class="html-eti">&lt;optgroup&gt;</span>, <span class="html-eti">&lt;option&gt;</span> y <span class="html-eti">&lt;textarea&gt;</span>. Además, se pueden estructurar los controles con las etiquetas <span class="html-eti">&lt;fieldset&gt;</span> y <span class="html-eti">&lt;legend&gt;</span>. Por último, la etiqueta <span class="html-eti">&lt;label&gt;</span> permite mejorar la accesibilidad de los controles.</p>
+
+    <p>El navegador envía únicamente los datos de los controles contenidos en el formulario. En una misma página puede haber varios formularios que envíen datos al mismo o a diferentes agentes.</p>
+  </section>
+
+  <section id="atributos-comunes">
+    <h2>Atributos comunes de los controles</h2>
+
+    <p>Algunos atributos se pueden utilizar en varios tipos de controles.</p>
+
+    <section id="atributo-type">
+      <h3>El atributo <span class="html-atri">type</span></h3>
+
+      <p>El atributo <span class="html-atri">type</span> de la etiqueta <span class="html-eti">&lt;input&gt;</span> indica el tipo de control de que se trata.</p>
+
+      <p>En HTML 4.01 los tipos de <span class="html-eti">&lt;input&gt;</span> eran:
+        botón para enviar, botón para reiniciar, texto, contraseña,archivo ,imagen y oculto.</p>
+
+      <p>En HTML 5 se añadieron los tipos de <span class="html-eti">&lt;input&gt;</span>:
+        botón, número, búsqueda, teléfono, dirección web, dirección de correo, fecha, hora, color y rango</p>
+
+      <p>En HTML 5.1 se añadieron los tipos de <span class="html-eti">&lt;input&gt;</span>:
+        mes, semana y
+        fecha y hora local .</p>
+    </section>
+
+    <section id="atributo-name">
+      <h3>El atributo <span class="html-atri">name</span></h3>
+
+      <p>El atributo <span class="html-atri">name</span> identifica al control.</p>
+
+      <p>Todos los controles de un formulario deben tener el atributo <span class="html-atri">name</span> porque, en general, sólo se envían los controles que lo tienen (aunque hay excepciones, como los controles de tipo imagen o los botones, que no los necesitan).</p>
+
+      <p>En general, los atributos <span class="html-atri">name</span> no se deben repetir, porque no se recibiría toda la información al enviarla. La única excepción es el botón radio, como se explica en el apartado correspondiente.</p>
+    </section>
+
+    <section id="atributo-value">
+      <h3>El atributo <span class="html-atri">value</span></h3>
+
+      <p>El atributo <span class="html-atri">value</span> permite establecer el valor inicial de un control, aunque cada control lo utiliza de una forma ligeramente distinta y algunos controles no lo admiten (área de texto, archivo o imagen).</p>
+
+      <p>En algunos casos (botones) el valor se muestra al usuario y el usuario no puede modificarlo. En otros casos (cajas de texto, contraseña) el valor se muestra en la página y el usuario puede modificarlo. En otros casos (casillas de verificación, botones radio, opciones de menú, oculto) el valor no se muestra en la página y el usuario no puede modificarlo.</p>
+
+      <p>En algunos casos (botones, oculto, botones radio) el atributo <span class="html-atri">value</span> es necesario. En otros casos (casilla de verificación, opciones de menú) es conveniente. En otros casos (cajas de texto, contraseña, imagen) puede omitirse. En el caso del selector de archivo, los navegadores no lo admiten por motivos de seguridad.</p>
+    </section>
+
+    <section id="atributo-required">
+      <h3>El atributo <span class="html-atri">required</span></h3>
+
+      <p>El atributo <span class="html-atri">required</span> permite indicar qué controles es obligatorio rellenar para enviar el formulario.</p>
+
+      <div class="filaflex">
+        <div class="codigo">
+          <pre class=" language-html" tabindex="0"><code class=" language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>Nombre:<span class="token space"> </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span><span class="token space"> </span><span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text<span class="token punctuation">"</span></span><span class="token space"> </span><span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>nombre<span class="token punctuation">"</span></span><span class="token space"> </span><span class="token attr-name">required</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span><span class="token lf">
+</span><span class="token lf">
+</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>Sexo:<span class="token lf">
+</span><span class="token space"> </span><span class="token space"> </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span><span class="token space"> </span><span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>radio<span class="token punctuation">"</span></span><span class="token space"> </span><span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>hm<span class="token punctuation">"</span></span><span class="token space"> </span><span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>h<span class="token punctuation">"</span></span><span class="token space"> </span><span class="token attr-name">required</span><span class="token punctuation">&gt;</span></span><span class="token space"> </span>Hombre<span class="token lf">
+</span><span class="token space"> </span><span class="token space"> </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span><span class="token space"> </span><span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>radio<span class="token punctuation">"</span></span><span class="token space"> </span><span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>hm<span class="token punctuation">"</span></span><span class="token space"> </span><span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>m<span class="token punctuation">"</span></span><span class="token space"> </span><span class="token attr-name">required</span><span class="token punctuation">&gt;</span></span><span class="token space"> </span>Mujer<span class="token lf">
+</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span></code>
+</pre>
+        </div>
+      </div>
+
+      <p>Si alguna de las opciones de un botón radio tiene establecido el atributo <span class="html-atri">required</span>, el control es obligatorio.</p>
+
+      <div class="filaflex">
+        <div class="codigo">
+          <pre class=" language-html" tabindex="0"><code class=" language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>Sexo:<span class="token lf">
+</span><span class="token space"> </span><span class="token space"> </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span><span class="token space"> </span><span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>radio<span class="token punctuation">"</span></span><span class="token space"> </span><span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>hm<span class="token punctuation">"</span></span><span class="token space"> </span><span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>h<span class="token punctuation">"</span></span><span class="token space"> </span><span class="token attr-name">required</span><span class="token punctuation">&gt;</span></span><span class="token space"> </span>Hombre<span class="token lf">
+</span><span class="token space"> </span><span class="token space"> </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span><span class="token space"> </span><span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>radio<span class="token punctuation">"</span></span><span class="token space"> </span><span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>hm<span class="token punctuation">"</span></span><span class="token space"> </span><span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>m<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token space"> </span>Mujer<span class="token lf">
+</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span><span class="token lf">
+</span><span class="token lf">
+</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>Edad:<span class="token lf">
+</span><span class="token space"> </span><span class="token space"> </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span><span class="token space"> </span><span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>radio<span class="token punctuation">"</span></span><span class="token space"> </span><span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>edad<span class="token punctuation">"</span></span><span class="token space"> </span><span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>menor<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token space"> </span>Menor<span class="token lf">
+</span><span class="token space"> </span><span class="token space"> </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span><span class="token space"> </span><span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>radio<span class="token punctuation">"</span></span><span class="token space"> </span><span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>edad<span class="token punctuation">"</span></span><span class="token space"> </span><span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>adulto<span class="token punctuation">"</span></span><span class="token space"> </span><span class="token attr-name">required</span><span class="token punctuation">&gt;</span></span><span class="token space"> </span>Adulto<span class="token lf">
+</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span></code>
+  </pre>
+        </div>
+      </div>
+    </section>
+
+    <section id="atributo-placeholder">
+      <h3>El atributo <span class="html-atri">placeholder</span></h3>
+
+      <p>El atributo <span class="html-atri">placeholder</span> permite mostrar en los controles de texto un texto que desaparece al escribir en el control.</p>
+
+      <div class="filaflex">
+        <div class="codigo">
+          <pre class=" language-html" tabindex="0"><code class=" language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>Apellidos:<span class="token lf">
+</span><span class="token space"> </span><span class="token space"> </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span><span class="token space"> </span><span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text<span class="token punctuation">"</span></span><span class="token space"> </span><span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>apellidos<span class="token punctuation">"</span></span><span class="token space"> </span><span class="token attr-name">size</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>40<span class="token punctuation">"</span></span><span class="token space"> </span><span class="token attr-name">placeholder</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>Escriba<span class="token space"> </span>sus<span class="token space"> </span>dos<span class="token space"> </span>apellidos<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token lf">
+</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span></code>
+</pre>
+        </div>
+      </div>
+    </section>
+
+    <section id="atributo-size">
+      <h3>El atributo <span class="html-atri">size</span></h3>
+
+      <p>El atributo <span class="html-atri">size</span> permite establecer la longitud de los controles de texto (<span class="html-atri-valor">text</span>, <span class="html-atri-valor">password</span>, <span class="html-atri-valor">search</span>, etc.). Por omisión, las cajas suelen tener 20 caracteres de longitud.</p>
+
+      <div class="filaflex">
+        <div class="codigo">
+          <pre class=" language-html" tabindex="0"><code class=" language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>Nombre:<span class="token space"> </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span><span class="token space"> </span><span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text<span class="token punctuation">"</span></span><span class="token space"> </span><span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>nombre<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span><span class="token lf">
+</span><span class="token lf">
+</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>Apellidos:<span class="token space"> </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span><span class="token space"> </span><span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text<span class="token punctuation">"</span></span><span class="token space"> </span><span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>apellidos<span class="token punctuation">"</span></span><span class="token space"> </span><span class="token attr-name">size</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>40<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span><span class="token lf">
+</span><span class="token lf">
+</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>Nacionalidad:<span class="token space"> </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span><span class="token space"> </span><span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text<span class="token punctuation">"</span></span><span class="token space"> </span><span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>nacionalidad<span class="token punctuation">"</span></span><span class="token space"> </span><span class="token attr-name">size</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>20<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span></code>
+</pre>
+        </div>
+      </div>
+    </section>
+
+    <section id="atributos-minlength-maxlength">
+      <h3>Los atributos <span class="html-atri">maxlength</span> y <span class="html-atri">minlength</span></h3>
+
+      <p>Los atributos <span class="html-atri">maxlength</span> y <span class="html-atri">minlength</span> permiten establecer la longitud máxima y mínima, respectivamente, que puede escribir el usuario en un control de texto (<span class="html-atri-valor">text</span>, <span class="html-atri-valor">password</span>, <span class="html-atri-valor">search</span>, etc.).</p>
+
+      <div class="filaflex">
+        <div class="codigo">
+          <pre class=" language-html" tabindex="0"><code class=" language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>Usuario:<span class="token space"> </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span><span class="token space"> </span><span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text<span class="token punctuation">"</span></span><span class="token space"> </span><span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>usuario<span class="token punctuation">"</span></span><span class="token space"> </span><span class="token attr-name">maxlength</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>6<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span><span class="token lf">
+</span><span class="token lf">
+</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>Contraseña:<span class="token space"> </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span><span class="token space"> </span><span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>password<span class="token punctuation">"</span></span><span class="token space"> </span><span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>password<span class="token punctuation">"</span></span><span class="token space"> </span><span class="token attr-name">minlength</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>6<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span></code>
+</pre>
+        </div>
+      </div>
+    </section>
+
+    <section id="atributo-autofocus">
+      <h3>El atributo <span class="html-atri">autofocus</span></h3>
+
+      <p>El atributo <span class="html-atri">autofocus</span> permite indicar el control que debe tener el foco al cargarse el formulario.</p>
+
+      <p>Este atributo facilita la accesibilidad del formulario pues permite que el usuario pueda empezar a rellenar el formulario sin necesidad de hacer clic en el elemento. Como el navegador desplaza automáticamente la página hasta la posición del elemento, se recomienda que el elemento con atributo <span class="html-atri">autofocus</span> se encuentren al principio de la página, para que el desplazamiento no confunda al usuario.</p>
+
+      <p><strong>Nota</strong>: En estos apuntes (lecciones y ejercicios) no se utiliza este atributo porque como en las páginas se incluyen varios formularios en distintas posiciones de la página, el desplazamiento automático a un elemento con atributo <span class="html-atri">autofocus</span> puede confundir al lector.</p>
+    </section>
+  </section>
 </body>
 </html>
