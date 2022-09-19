@@ -297,4 +297,50 @@ li ul {
 .menu_interno{
   height: 0px;
   overflow: hidden;
+  transition: all 0.3s;
+}
+
+.nosotros{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  padding: 50px;
+}
+
+.perfil-card{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  padding: 40px;
+  text-align: center;
+}
+
+.techs{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px
+  
+}
+
+.techs li{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.techs li img{
+  width: 32px;
+} 
+
+@media (min-width: 1000px) {
+  .perfil-card{
+    width: 45%;
+  }
 }

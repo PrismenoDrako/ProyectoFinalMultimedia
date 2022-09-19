@@ -1,5 +1,6 @@
 var sesions = document.getElementById('sesions');
-var presen = document.getElementById('presentation')
+var presen = document.getElementById('presentation');
+var nosotros = document.getElementById('nosotros');
 var btn_sidebar = document.getElementById('btn-sidebar');
 
 var sidebar = document.getElementById('sidebar');
@@ -29,6 +30,10 @@ presen.addEventListener('click',() => {
 sesions.addEventListener('click',() => {
     watch_sesions();
 });
+
+nosotros.addEventListener('click', ()=>{
+    presentation();
+})
 
 btn_sidebar.addEventListener('click',() => {
     console.log("hey")
