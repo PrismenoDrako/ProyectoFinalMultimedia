@@ -108,6 +108,7 @@ li ul {
 }
 
 .nav-bar-container-super {
+
   grid-area: 1 / 1 / 2 / 5;
   height: 80px;
   width: 100%;
