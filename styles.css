@@ -319,14 +319,18 @@ li ul {
   box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   padding: 40px;
   text-align: center;
+  background-color: white;
 }
 
 .techs{
   list-style: none;
   display: flex;
-  flex-direction: column;
-  gap: 10px
-  
+  flex-wrap: wrap;
+  column-gap: 30px;
+  row-gap: 20px;
+  justify-content: center;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
 .techs li{
